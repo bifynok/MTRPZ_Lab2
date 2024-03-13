@@ -368,5 +368,25 @@
     </body>
     </html>";
         }   
+
+        public static void AskForOutput(ref bool flag)
+        {
+            Console.WriteLine("Would you like output in .html file or wrote in console? (Please write \"c\" - for console, or \"f\" - for file)");
+            string answer = Console.ReadLine();
+
+            if (answer == "c")
+            {
+                flag = false;
+            }
+            else if (answer == "f")
+            {
+                flag = true;
+            }
+            else
+            {
+                Console.WriteLine("Unknown variant, please try again.");
+                AskForOutput(ref flag);
+            }
+        }
     }
 }

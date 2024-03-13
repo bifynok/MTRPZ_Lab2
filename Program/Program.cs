@@ -5,6 +5,7 @@ class MyProgram
     {
         string text = @"";
         string path = "", name = "";
+        bool flag = false;
 
         try
         {
@@ -13,8 +14,16 @@ class MyProgram
             ConverterMDtoHTML.ChangeText(ref text);
             ConverterMDtoHTML.CheckIncluded(text);
             ConverterMDtoHTML.AddHTMLStructure(ref text);
-            ConverterMDtoHTML.CreateHTML(text, path, name);
-            Console.WriteLine("File successfuly created!");
+            ConverterMDtoHTML.AskForOutput(ref flag);
+            if (flag)
+            {
+                ConverterMDtoHTML.CreateHTML(text, path, name);
+                Console.WriteLine("File successfuly created!");
+            }
+            else
+            {
+                Console.WriteLine(text);
+            }
         }
         catch (Exception ex)
         {
