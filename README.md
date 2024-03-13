@@ -33,3 +33,7 @@ For compilating tests, open terminal in this repo and write some comands:
 ### Revert-commit
 
 This is [revert-commit](https://github.com/bifynok/MTRPZ_Lab2/commit/5cc8a70dc9b93b55a56b81618d0b74b8affb50aa)
+
+### Сonclusions
+
+Tests are an interesting thing, at the moment there is no need for them, because I have quite small projects that are faster and easier to check manually.
