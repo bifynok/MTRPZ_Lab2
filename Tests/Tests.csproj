@@ -7,4 +7,12 @@
     <Nullable>enable</Nullable>
   </PropertyGroup>
 
+  <ItemGroup>
+    <Compile Include="..\Program\ConverterMDtoHTML.cs" Link="Tested\ConverterMDtoHTML.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Tested\" />
+  </ItemGroup>
+
 </Project>
